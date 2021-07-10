@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Universe : MonoBehaviour
 {
-    [Range(1, 50)]
+    [Range(1, 25)]
     public float timeScale = 1;
 
     // Start is called before the first frame update
