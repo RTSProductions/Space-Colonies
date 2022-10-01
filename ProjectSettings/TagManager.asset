@@ -3,19 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Star
+  - Black Hole
+  - Creature
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Star
+  - Post
   - Water
   - UI
-  - Post
-  - 
-  - 
-  - 
-  - 
+  - Celestial Body
+  - Star
+  - Object
+  - Control
+  - Ship
   - 
   - 
   - 
