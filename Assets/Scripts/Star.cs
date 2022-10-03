@@ -19,6 +19,13 @@ public class Star : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.transform.tag != "Black Hole")
-            Destroy(collision.collider.gameObject);
+        {
+            if (collision.collider.TryGetComponent<LiveEntity>(out LiveEntity entity))
+            {
+                entity.Die(" Was burned by " + gameObject.name);
+            }
+            else
+                Destroy(collision.collider.gameObject);
+        }
     }
 }

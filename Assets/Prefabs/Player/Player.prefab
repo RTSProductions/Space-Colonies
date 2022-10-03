@@ -121,7 +121,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 100000
   field of view: 60
   orthographic: 0
@@ -282,7 +282,7 @@ Transform:
   - {fileID: 4034428947924996464}
   - {fileID: 4034428948697203147}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!33 &4034428949060207679
 MeshFilter:
@@ -398,6 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4034428949060207677}
+  currentShip: {fileID: 0}
 --- !u!114 &4034428949060207674
 MonoBehaviour:
   m_ObjectHideFlags: 0

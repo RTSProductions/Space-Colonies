@@ -27,7 +27,7 @@ public class BlackHole : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.collider.transform.tag != "Black Hole" && collision.collider.transform.tag != "Player")
+        if (collision.collider.transform.tag != "Black Hole" && collision.collider.transform.tag != "Player" && collision.collider.transform.tag != "Creature")
         {
             if (collision.collider.transform.localScale.x < Vector3.one.x)
             {
@@ -66,6 +66,12 @@ public class BlackHole : MonoBehaviour
             {
                 Destroy(collision.collider.gameObject);
             }
+        }
+        else if (collision.collider.transform.tag == "Creature")
+        {
+            rate = (GetComponent<Rigidbody>().mass - collision.rigidbody.mass) / 10000;
+
+            collision.collider.GetComponent<LiveEntity>().Die(" Was spegitified");
         }
     }
 }

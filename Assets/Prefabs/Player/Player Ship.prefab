@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2831347743391763814
 Transform:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1793
+    m_Bits: 5889
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -243,7 +243,7 @@ Transform:
   - {fileID: 2831347743391763814}
   - {fileID: 2831347744460612638}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2831347743635073105
 Rigidbody:
@@ -533,7 +533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2831347744373186439
 Transform:
   m_ObjectHideFlags: 0
@@ -598,7 +598,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1793
+    m_Bits: 5889
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -1013,7 +1013,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1793
+    m_Bits: 5889
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -1141,6 +1141,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 2831347743635073103}
     m_Modifications:
     - target: {fileID: -8987132448708304821, guid: 7a806b7b1173b4a01bc3da885f84fd0e, type: 3}
@@ -1320,6 +1321,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 9125758771449095398, guid: 7a806b7b1173b4a01bc3da885f84fd0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2831347743718543965}
   m_SourcePrefab: {fileID: 100100000, guid: 7a806b7b1173b4a01bc3da885f84fd0e, type: 3}
 --- !u!4 &2359972759740495061 stripped
 Transform:
